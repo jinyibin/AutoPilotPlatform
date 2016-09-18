@@ -1,0 +1,194 @@
+(ExpressProject "interface board1"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "d:\part_database\sch\connector.olb"
+        (Type "Schematic Library"))
+      (File "d:\part_database\sch\ic_ad.olb"
+        (Type "Schematic Library"))
+      (File "d:\part_database\sch\ic_cpu_pld.olb"
+        (Type "Schematic Library"))
+      (File "d:\part_database\sch\ic_interface.olb"
+        (Type "Schematic Library"))
+      (File "d:\part_database\sch\ic_mem.olb"
+        (Type "Schematic Library"))
+      (File "d:\part_database\sch\ic_other.olb"
+        (Type "Schematic Library"))
+      (File "d:\part_database\sch\ic_power.olb"
+        (Type "Schematic Library"))
+      (File "d:\part_database\sch\misc.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\interface board1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80"))
+  (Folder "Outputs"
+    (Sort User)
+    (File "INTERFACE BOARD1.PRP"
+      (Type "Report")
+      (DisplayName "INTERFACE BOARD1.PRP")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (HOLE
+      (FullPartName "HOLE.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 5X2 SMT"
+      (FullPartName "HEADER 5X2 SMT.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (SPACER
+      (FullPartName "SPACER.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CAP
+      (FullPartName "CAP.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0"))
+    (ADM2582
+      (FullPartName "ADM2582.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\IC_INTERFACE.OLB")
+      (DeviceIndex "0"))
+    (LTC2864
+      (FullPartName "LTC2864.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\IC_INTERFACE.OLB")
+      (DeviceIndex "0"))
+    (RES
+      (FullPartName "RES.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0"))
+    (MOSFET_N
+      (FullPartName "MOSFET_N.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 5X2"
+      (FullPartName "HEADER 5X2.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGE-BIDIR
+      (LibraryName "Q:\ORCADCIS\SYMBOLS\FCL_STANDARD.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-R
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName "D:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (CON3X1
+      (FullPartName "CON3X1.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (JUMPER
+      (FullPartName "JUMPER.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (DIODE_DUAL
+      (FullPartName "DIODE_DUAL.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0"))
+    (LT3973
+      (FullPartName "LT3973.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\IC_POWER.OLB")
+      (DeviceIndex "0"))
+    (LT1912
+      (FullPartName "LT1912.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\IC_POWER.OLB")
+      (DeviceIndex "0"))
+    (DSUB-HD-62-R
+      (FullPartName "DSUB-HD-62-RC.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\CONNECTOR.OLB")
+      (DeviceIndex "2"))
+    (DSUB-HD-44-R
+      (FullPartName "DSUB-HD-44-RC.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\CONNECTOR.OLB")
+      (DeviceIndex "2"))
+    ("HEADER 20X2"
+      (FullPartName "HEADER 20X2.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (FUSE
+      (FullPartName "FUSE.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0"))
+    (DIODE_SCHOTTKY
+      (FullPartName "DIODE_SCHOTTKY.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "G:\Project\AutoPilotPlatform\sch workspace\interface board1\interface board1.dsn")
+      (Path "Design Resources"
+         "G:\Project\AutoPilotPlatform\sch workspace\interface board1\interface board1.dsn"
+         "interface board1")
+      (Path "Design Resources"
+         "G:\Project\AutoPilotPlatform\sch workspace\interface board1\interface board1.dsn"
+         "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" "d:\part_database\sch\misc.olb")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "G:\Project\AutoPilotPlatform\sch workspace\interface board1\interface board1.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 431"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 175 1556 175 614")
+        (Scroll "75 218")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "01.MECH"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1406 25 464")
+        (Scroll "-166 0")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "06.Switch Controller"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1615 200 639")
+        (Scroll "-198 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "02.Panel Connector")))
+  (MPSSessionName "orca"))
