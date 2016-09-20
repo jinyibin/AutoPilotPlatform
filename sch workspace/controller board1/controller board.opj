@@ -40,7 +40,11 @@
     (width_pages "100")
     (width_start "80")
     (width_End "80"))
-  (Folder "Outputs")
+  (Folder "Outputs"
+    (Sort User)
+    (File "CONTROLLER BOARD.PRP"
+      (Type "Report")
+      (DisplayName "CONTROLLER BOARD.PRP")))
   (Folder "Referenced Projects")
   (PartMRUSelector
     (HOLE
@@ -143,12 +147,17 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" ".\controller board.dsn")
-      (Path "Design Resources" ".\controller board.dsn" "SCHEMATIC1")
-      (Path "Design Resources" ".\controller board.dsn" "Design Cache")
+      (Path "Design Resources"
+         "g:\project\autopilotplatform\sch workspace\controller board1\controller board.dsn")
+      (Path "Design Resources"
+         "g:\project\autopilotplatform\sch workspace\controller board1\controller board.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources"
+         "g:\project\autopilotplatform\sch workspace\controller board1\controller board.dsn"
+         "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" "d:\part_database\sch\connector.olb")
-      (Select "Design Resources" ".\controller board.dsn"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -170,8 +179,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 150 1565 150 589")
-        (Scroll "1640 1816")
-        (Zoom "160")
+        (Scroll "0 384")
+        (Zoom "88")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
@@ -181,11 +190,88 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 175 1590 175 614")
-        (Scroll "23 496")
-        (Zoom "80")
+        (Scroll "1670 1989")
+        (Zoom "176")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "08.CPU_MISC_PIN")))
+      (Page "08.CPU_MISC_PIN"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 125 1833 125 594")
+        (Scroll "-345 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "02.BTB Connector"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1858 150 619")
+        (Scroll "0 574")
+        (Zoom "130")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "11.FPGA_POWER_CONFIG"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 175 1883 175 644")
+        (Scroll "764 1635")
+        (Zoom "260")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "05.CPU_CONFIG"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1908 200 669")
+        (Scroll "-70 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "09.CPU_USB_SD"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 1708 0 469")
+        (Scroll "0 370")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "04.CPU_POWER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1733 25 494")
+        (Scroll "-325 0")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "06.CPU_DDR3"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 50 1733 50 534")
+        (Scroll "0 156")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "07.CPU_FLASH")))
   (MPSSessionName "orca"))
