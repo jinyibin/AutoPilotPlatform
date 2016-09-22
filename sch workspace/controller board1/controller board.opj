@@ -157,7 +157,10 @@
          "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" "d:\part_database\sch\connector.olb")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"
+         "g:\project\autopilotplatform\sch workspace\controller board1\controller board.dsn"
+         "SCHEMATIC1" "05.CPU_CONFIG"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -222,9 +225,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 175 1883 175 644")
-        (Scroll "764 1635")
-        (Zoom "260")
+        (Placement "44 2 3 -1 -1 -8 -30 175 1883 175 644")
+        (Scroll "0 0")
+        (Zoom "130")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
@@ -266,7 +269,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 50 1733 50 534")
+        (Placement "44 0 1 -1 -1 -8 -30 50 1733 50 534")
         (Scroll "0 156")
         (Zoom "200")
         (Occurrence "/"))

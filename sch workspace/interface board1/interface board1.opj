@@ -140,24 +140,17 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "G:\Project\AutoPilotPlatform\sch workspace\interface board1\interface board1.dsn")
+         "g:\project\autopilotplatform\sch workspace\interface board1\interface board1.dsn")
       (Path "Design Resources"
-         "G:\Project\AutoPilotPlatform\sch workspace\interface board1\interface board1.dsn"
+         "g:\project\autopilotplatform\sch workspace\interface board1\interface board1.dsn"
          "interface board1")
-      (Path "Design Resources"
-         "G:\Project\AutoPilotPlatform\sch workspace\interface board1\interface board1.dsn"
-         "Design Cache")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library" "d:\part_database\sch\misc.olb")
-      (Path "Outputs")
-      (Select "Design Resources"
-         "G:\Project\AutoPilotPlatform\sch workspace\interface board1\interface board1.dsn"
-         "interface board1" "03.Socket Main"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 431"))
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 431"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
@@ -184,8 +177,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 200 1615 200 639")
-        (Scroll "-198 0")
+        (Placement "44 2 3 -1 -1 -8 -30 200 1615 200 639")
+        (Scroll "-453 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
