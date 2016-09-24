@@ -47,6 +47,10 @@
       (DisplayName "INTERFACE BOARD1.PRP")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (RES
+      (FullPartName "RES.Normal")
+      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
+      (DeviceIndex "0"))
     (HOLE
       (FullPartName "HOLE.Normal")
       (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
@@ -70,10 +74,6 @@
     (LTC2864
       (FullPartName "LTC2864.Normal")
       (LibraryName "D:\PART_DATABASE\SCH\IC_INTERFACE.OLB")
-      (DeviceIndex "0"))
-    (RES
-      (FullPartName "RES.Normal")
-      (LibraryName "D:\PART_DATABASE\SCH\MISC.OLB")
       (DeviceIndex "0"))
     (MOSFET_N
       (FullPartName "MOSFET_N.Normal")
@@ -144,7 +144,11 @@
       (Path "Design Resources"
          "g:\project\autopilotplatform\sch workspace\interface board1\interface board1.dsn"
          "interface board1")
+      (Path "Design Resources"
+         "g:\project\autopilotplatform\sch workspace\interface board1\interface board1.dsn"
+         "Design Cache")
       (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" "d:\part_database\sch\ic_power.olb")
       (Path "Outputs"))
     (HierarchyView)
     (Doc
@@ -155,30 +159,41 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 175 1556 175 614")
-        (Scroll "75 218")
+        (Placement "44 0 1 -1 -1 -8 -30 0 1708 0 469")
+        (Scroll "-345 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
       (Schematic "interface board1")
-      (Page "01.MECH"))
+      (Page "16.RS485_CH9"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 25 1406 25 464")
-        (Scroll "134 616")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -30 50 1758 50 519")
+        (Scroll "-336 0")
+        (Zoom "65")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
       (Schematic "interface board1")
-      (Page "06.Switch Controller"))
+      (Page "17.RS485_CH10"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 200 1615 200 639")
-        (Scroll "-453 0")
+        (Placement "44 0 1 -1 -1 -8 -30 75 1783 75 544")
+        (Scroll "90 257")
+        (Zoom "130")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "18.RS485_CH11"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1808 100 569")
+        (Scroll "-345 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
@@ -188,12 +203,56 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 25 1708 25 509")
-        (Scroll "-332 0")
+        (Placement "44 0 1 -1 -1 -8 -30 150 1858 150 619")
+        (Scroll "72 0")
+        (Zoom "130")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "23.RS232_Debug"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 175 1883 175 644")
+        (Scroll "-89 81")
+        (Zoom "84")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "25.RS232"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1908 200 669")
+        (Scroll "0 810")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
       (Schematic "interface board1")
-      (Page "03.Socket Main")))
+      (Page "05.Power"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 1708 0 469")
+        (Scroll "-345 10")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "03.Socket Main"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1733 25 494")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "06.Switch Controller")))
   (MPSSessionName "orca"))

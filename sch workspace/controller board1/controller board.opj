@@ -42,7 +42,7 @@
     (width_End "80"))
   (Folder "Outputs"
     (Sort User)
-    (File "CONTROLLER BOARD.PRP"
+    (File ".\controller board.prp"
       (Type "Report")
       (DisplayName "CONTROLLER BOARD.PRP")))
   (Folder "Referenced Projects")
@@ -147,20 +147,14 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "g:\project\autopilotplatform\sch workspace\controller board1\controller board.dsn")
-      (Path "Design Resources"
-         "g:\project\autopilotplatform\sch workspace\controller board1\controller board.dsn"
-         "SCHEMATIC1")
-      (Path "Design Resources"
-         "g:\project\autopilotplatform\sch workspace\controller board1\controller board.dsn"
-         "Design Cache")
+      (Path "Design Resources" ".\controller board.dsn")
+      (Path "Design Resources" ".\controller board.dsn" "SCHEMATIC1")
+      (Path "Design Resources" ".\controller board.dsn" "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" "d:\part_database\sch\connector.olb")
       (Path "Outputs")
-      (Select "Design Resources"
-         "g:\project\autopilotplatform\sch workspace\controller board1\controller board.dsn"
-         "SCHEMATIC1" "05.CPU_CONFIG"))
+      (Select "Design Resources" ".\controller board.dsn" "SCHEMATIC1"
+         "02.BTB Connector"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -171,8 +165,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 200 1581 200 639")
-        (Scroll "-264 0")
-        (Zoom "83")
+        (Scroll "-244 0")
+        (Zoom "87")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
@@ -182,7 +176,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 150 1565 150 589")
-        (Scroll "0 384")
+        (Scroll "0 420")
         (Zoom "88")
         (Occurrence "/"))
       (Path
@@ -204,8 +198,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 125 1833 125 594")
-        (Scroll "-345 0")
-        (Zoom "100")
+        (Scroll "0 0")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\CONTROLLER BOARD1\CONTROLLER BOARD.DSN")
@@ -225,7 +219,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 175 1883 175 644")
+        (Placement "44 0 1 -1 -1 -8 -30 175 1883 175 644")
         (Scroll "0 0")
         (Zoom "130")
         (Occurrence "/"))
