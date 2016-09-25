@@ -149,12 +149,15 @@
          "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Design Resources" "Library" "d:\part_database\sch\ic_power.olb")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources"
+         "g:\project\autopilotplatform\sch workspace\interface board1\interface board1.dsn"
+         "interface board1" "04.Socket Spare"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 431"))
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 431"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
@@ -214,8 +217,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 175 1883 175 644")
-        (Scroll "-89 81")
+        (Placement "44 0 1 -1 -1 -8 -30 175 1883 175 644")
+        (Scroll "0 0")
         (Zoom "84")
         (Occurrence "/"))
       (Path
@@ -237,8 +240,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 0 1708 0 469")
-        (Scroll "-345 10")
-        (Zoom "100")
+        (Scroll "55 772")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
@@ -248,11 +251,22 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 25 1733 25 494")
-        (Scroll "0 0")
+        (Scroll "0 310")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
       (Schematic "interface board1")
-      (Page "06.Switch Controller")))
+      (Page "06.Switch Controller"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1808 100 569")
+        (Scroll "-345 35")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "G:\PROJECT\AUTOPILOTPLATFORM\SCH WORKSPACE\INTERFACE BOARD1\INTERFACE BOARD1.DSN")
+      (Schematic "interface board1")
+      (Page "04.Socket Spare")))
   (MPSSessionName "orca"))
