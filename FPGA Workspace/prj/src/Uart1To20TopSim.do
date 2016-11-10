@@ -1,0 +1,2 @@
+                                                                                                                                                                          
+vsim -novopt -t ps  -L work -L work_lib    -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver  work.Uart1To20Top_sim                               

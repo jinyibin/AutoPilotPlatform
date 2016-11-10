@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sun Oct 30 20:34:08 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : prj
+Top-level Entity Name : Uart1To20Top
+Family : MAX 10
+Total logic elements : 7,122
+    Total combinational functions : 6,709
+    Dedicated logic registers : 4,262
+Total registers : 4262
+Total pins : 48
+Total virtual pins : 0
+Total memory bits : 81,920
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

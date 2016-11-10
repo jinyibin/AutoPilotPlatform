@@ -1,0 +1,197 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "spi_miso",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx_from_fpga",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[0]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[1]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[2]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[3]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[4]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[5]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[6]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[7]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[8]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[9]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[10]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[11]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[12]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[13]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[14]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[15]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[16]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[17]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[18]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx[19]",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "spi_clk",
+					"strict" : false
+				},
+				{
+					"name" : "spi_cs_n",
+					"strict" : false
+				},
+				{
+					"name" : "spi_mosi",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx_to_fpga",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[8]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[5]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[6]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[0]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[1]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[3]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[4]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[2]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[9]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[7]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[10]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[11]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[12]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[13]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[14]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[15]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[16]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[17]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[18]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx[19]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,10 @@
+
+
+e:/work/king/prj/src/pll_8MIn.v
+
+Oct 30 08PM:19:11>: Error in CNX file format.
+
+Error messages are listed in file
+e:/work/king/prj/src/pll_8MIn.cnxerr.
+
+Can't create the custom megafunction variation file(s)

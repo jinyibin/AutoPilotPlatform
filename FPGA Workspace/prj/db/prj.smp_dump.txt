@@ -1,0 +1,351 @@
+
+State Machine - |Uart1To20Top|MainRxctrl:MainRxctrl_inst|channal_no
+Name channal_no.00010100 channal_no.00010011 channal_no.00010010 channal_no.00010001 channal_no.00010000 channal_no.00001111 channal_no.00001110 channal_no.00001101 channal_no.00001100 channal_no.00001011 channal_no.00001010 channal_no.00001001 channal_no.00001000 channal_no.00000111 channal_no.00000110 channal_no.00000101 channal_no.00000100 channal_no.00000011 channal_no.00000010 channal_no.00000001 channal_no.00000000 
+channal_no.00000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+channal_no.00000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+channal_no.00000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+channal_no.00000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+channal_no.00000100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+channal_no.00000101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+channal_no.00000110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+channal_no.00000111 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+channal_no.00001000 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+channal_no.00001001 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+channal_no.00001010 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+channal_no.00001011 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00001100 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00001101 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00001110 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00001111 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00010000 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00010001 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00010010 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00010011 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+channal_no.00010100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Uart1To20Top|MainRxctrl:MainRxctrl_inst|state
+Name state.1010 state.1001 state.1000 state.0111 state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 0 0 0 0 1 0 1 
+state.0011 0 0 0 0 0 0 0 1 0 0 1 
+state.0100 0 0 0 0 0 0 1 0 0 0 1 
+state.0101 0 0 0 0 0 1 0 0 0 0 1 
+state.0110 0 0 0 0 1 0 0 0 0 0 1 
+state.0111 0 0 0 1 0 0 0 0 0 0 1 
+state.1000 0 0 1 0 0 0 0 0 0 0 1 
+state.1001 0 1 0 0 0 0 0 0 0 0 1 
+state.1010 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_20inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_20inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_19inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_19inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_18inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_18inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_17inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_17inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_16inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_16inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_15inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_15inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_14inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_14inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_13inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_13inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_12inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_12inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_11inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_11inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_10inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_10inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_09inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_09inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_08inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_08inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_07inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_07inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_06inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_06inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_05inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_05inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_04inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_04inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_03inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_03inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_02inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_02inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_01inst|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_01inst|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|MainTxctrl:MainTxctrl_inst|state
+Name state.1001 state.1000 state.0111 state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 0 0 0 1 0 1 
+state.0011 0 0 0 0 0 0 1 0 0 1 
+state.0100 0 0 0 0 0 1 0 0 0 1 
+state.0101 0 0 0 0 1 0 0 0 0 1 
+state.0110 0 0 0 1 0 0 0 0 0 1 
+state.0111 0 0 1 0 0 0 0 0 0 1 
+state.1000 0 1 0 0 0 0 0 0 0 1 
+state.1001 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_Main|uart_rx_state
+Name uart_rx_state.STOP uart_rx_state.DATA uart_rx_state.START uart_rx_state.IDLE 
+uart_rx_state.IDLE 0 0 0 0 
+uart_rx_state.START 0 0 1 1 
+uart_rx_state.DATA 0 1 0 1 
+uart_rx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|uart_transceiver:uart_transceiver_Main|uart_tx_state
+Name uart_tx_state.STOP uart_tx_state.DATA uart_tx_state.START uart_tx_state.IDLE 
+uart_tx_state.IDLE 0 0 0 0 
+uart_tx_state.START 0 0 1 1 
+uart_tx_state.DATA 0 1 0 1 
+uart_tx_state.STOP 1 0 0 1 
+
+State Machine - |Uart1To20Top|spi_slave_reg:spi_slave_reg_inst|state
+Name state.IDLE state.WRITE state.READ 
+state.IDLE 0 0 0 
+state.READ 1 0 1 
+state.WRITE 1 1 0 

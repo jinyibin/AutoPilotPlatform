@@ -1,0 +1,453 @@
+`timescale 1 ns/100 ps
+
+module Uart1To20Top_sim();
+    reg     clk;
+    reg     rst_n;
+    reg     clk_40m;
+    
+    reg [15:0]  data_from_cpu;
+    reg [ 2:0]  mem_addr     ;
+    reg         read_n       ;
+    reg         reset_n      ;
+    reg         spi_select   ;
+    reg         write_n      ;
+    wire        readyfordata ;   
+    
+    reg [2:0]   uart_address      ; 
+    reg         uart_begintransfer; 
+    reg         uart_chipselect   ;           
+    reg         uart_read_n       ;                   
+    reg         uart_write_n      ; 
+    reg [15:0]  uart_writedata    ;
+    wire        uart_readyfordata ;
+    initial
+    begin
+        #10 clk                 = 1'b0;  
+            rst_n               = 1'b1;
+            clk_40m             = 1'b0;
+            
+            data_from_cpu       = 16'h0;          
+    	    mem_addr            = 16'h0;      
+    	    read_n              =  1'b1;      	 
+    	    spi_select          =  1'h0;
+            write_n             =  1'b1; 
+            
+            uart_address        =  3'h0;   
+            uart_begintransfer  =  1'b0;
+            uart_chipselect     =  1'b0;
+            uart_read_n         =  1'b0;
+            uart_write_n        =  1'b0;
+            uart_writedata      = 16'h0;
+          
+             
+        #1000
+            rst_n       = 1'b0;  
+        #200                      
+            rst_n       = 1'b1;
+        #1000
+//        wait(readyfordata)                         
+//        spi_send(3'h1,16'h0008) ;
+//        #500   
+//        wait(readyfordata)           
+//        spi_send(3'h1,16'h1) ; 
+//        #500
+//        wait(readyfordata)                               
+//        spi_send(3'h1,16'h4) ;  
+//        #500      
+//        wait(readyfordata)                       
+//        spi_send(3'h1,16'h2) ; 
+//        
+//        #500
+//        wait(readyfordata)                               
+//        spi_send(3'h1,16'hC003) ;  
+//        #500      
+//        wait(readyfordata)                       
+//        spi_send(3'h1,16'hFFFF) ; 
+//        
+//        
+//        
+//        #1000
+//        wait(readyfordata)                         
+//        spi_send(3'h1,16'h0005) ;
+//        #500   
+//        wait(readyfordata)           
+//        spi_send(3'h1,16'h3) ; 
+//        #500
+//        wait(readyfordata)                               
+//        spi_send(3'h1,16'h6) ;  
+//        #500      
+//        wait(readyfordata)                       
+//        spi_send(3'h1,16'h4) ;
+//        
+//        
+//        #500
+//        wait(readyfordata)                               
+//        spi_send(3'h1,16'hC005) ;  
+//        #500      
+//        wait(readyfordata)                       
+//        spi_send(3'h1,16'hFFFF) ; 
+          
+          
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h24) ;
+          #8000    
+          wait(uart_readyfordata) 
+          #1000                     
+          uart_send(3'h1,16'h43) ;
+          #8000   
+          wait(uart_readyfordata) 
+          #1000                        
+          uart_send(3'h1,16'h54) ;
+          #8000  
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h46) ;
+          #8000 
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h4) ;// 数据段长度
+          #1000   
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h11) ;// 通道
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h35) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h47) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h65) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h78) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h39) ; //CRC0 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h47) ; //CRC1 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'hFE) ; //END 
+          #8000  
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h24) ;
+          #8000    
+          wait(uart_readyfordata) 
+          #1000                     
+          uart_send(3'h1,16'h43) ;
+          #8000   
+          wait(uart_readyfordata) 
+          #1000                        
+          uart_send(3'h1,16'h54) ;
+          #8000  
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h46) ;
+          #8000 
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h6) ;// 数据段长度
+          #1000   
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h12) ;// 通道
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h35) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h47) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h65) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h78) ; //data 
+          #1000  
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h65) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h78) ; //data 
+          #1000    
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h39) ; //CRC0 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h47) ; //CRC1 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'hFE) ; //END 
+          
+          
+          #8000 
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h24) ;
+          #8000    
+          wait(uart_readyfordata) 
+          #1000                     
+          uart_send(3'h1,16'h43) ;
+          #8000   
+          wait(uart_readyfordata) 
+          #1000                        
+          uart_send(3'h1,16'h54) ;
+          #8000  
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h46) ;
+          #8000 
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h4) ;// 数据段长度
+          #1000   
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h13) ;// 通道
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h35) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h47) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h65) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h78) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h39) ; //CRC0 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h47) ; //CRC1 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'hFE) ; //END 
+          #8000  
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h24) ;
+          #8000    
+          wait(uart_readyfordata) 
+          #1000                     
+          uart_send(3'h1,16'h43) ;
+          #8000   
+          wait(uart_readyfordata) 
+          #1000                        
+          uart_send(3'h1,16'h54) ;
+          #8000  
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h46) ;
+          #8000 
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h6) ;// 数据段长度
+          #1000   
+          wait(uart_readyfordata) 
+          #1000                         
+          uart_send(3'h1,16'h14) ;// 通道
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h35) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h47) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h65) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h78) ; //data 
+          #1000  
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h65) ; //data 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h78) ; //data 
+          #1000    
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h39) ; //CRC0 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'h47) ; //CRC1 
+          #1000   
+          wait(uart_readyfordata) 
+          #8000                       
+          uart_send(3'h1,16'hFE) ; //END 
+          
+    end
+    
+    always #62.5 clk = ~clk;   
+    always #12.5 clk_40m = ~clk_40m;   
+    
+    wire        spi_mosi ;
+    wire        spi_cs_n ;
+    wire        spi_clk  ;
+    wire        spi_miso ;  
+                
+    wire        uart_tx_to_fpga  ;
+    wire        uart_rx_from_fpga;
+    
+    wire [19:0] uart_rx;
+    wire [19:0] uart_tx;
+    Uart1To20Top Uart1To20Top(
+            .clk                (clk               ),//8M
+            .rst_n              (rst_n             ),  
+                                                   
+            .spi_mosi           (spi_mosi          ),//spi data input from master
+            .spi_cs_n           (spi_cs_n          ),//spi selection ,active low
+            .spi_clk            (spi_clk           ),//spi clock
+            .spi_miso           (spi_miso          ),//spi data output to master 
+                                                               
+                                                               
+            .uart_tx_to_fpga    (uart_tx_to_fpga   ),
+            .uart_rx_from_fpga  (uart_rx_from_fpga ),
+                                                   
+            .uart_rx            (uart_tx           ),
+            .uart_tx            (uart_tx           )
+        );
+    
+    spi_master_if spi_master_if(
+            // inputs:
+            .MISO           (spi_miso),
+            .clk            (clk_40m),
+            .data_from_cpu  (data_from_cpu),
+            .mem_addr       (mem_addr),
+            .read_n         (read_n),
+            .reset_n        (rst_n),
+            .spi_select     (spi_select),
+            .write_n        (write_n),
+             
+            // outputs:     
+            .MOSI           (spi_mosi),
+            .SCLK           (spi_clk),
+            .SS_n           (spi_cs_n),
+            .data_to_cpu    (),
+            .dataavailable  (),
+            .endofpacket    (),
+            .irq            (),
+            .readyfordata   (readyfordata)
+            );
+                       
+    str_qsys_uart_0 uart_inst(
+            // inputs:
+            .address        (uart_address       ),                                 
+            .begintransfer  (uart_begintransfer ),                                 
+            .chipselect     (uart_chipselect    ),                                 
+            .clk            (clk_40m            ),                     
+            .read_n         (uart_read_n        ),                                       
+            .reset_n        (rst_n              ),                  
+            .rxd            (uart_rx_from_fpga  ),
+            .write_n        (uart_write_n       ),
+            .writedata      (uart_writedata     ),
+                               
+            // outputs:        
+            .dataavailable  (),
+            .irq            (),
+            .readdata       (),
+            .readyfordata   (uart_readyfordata  ),
+            .txd            (uart_tx_to_fpga    )                   //
+            );  
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+task uart_send;
+    input   [ 2:0] addr;
+    input   [15:0] data;
+    begin
+        @(posedge clk_40m);
+        uart_address        <= 3'h0;      
+        uart_begintransfer  <= 1'b0;
+        uart_chipselect     <= 1'b0;
+        uart_read_n         <= 1'b1;
+        uart_write_n        <= 1'b1;
+        uart_writedata      <=16'h0;
+        @(posedge clk_40m);
+        uart_address        <= addr; 
+        uart_begintransfer  <= 1'b1; 
+	    uart_chipselect     <= 1'b1;  
+	    uart_read_n         <= 1'b0;   	 
+	    uart_write_n        <= 1'b0; 
+        uart_writedata      <= data; 
+        @(posedge clk_40m);
+                    
+	    uart_begintransfer  <= 1'b0;       
+	    uart_chipselect     <= 1'b0;     	 
+	    uart_read_n         <= 1'b1;   
+	    uart_write_n        <= 1'b1;   
+        
+    end  
+endtask
+            
+            
+task spi_send;
+    input   [ 2:0] addr;
+    input   [15:0] data;
+    begin
+        @(posedge clk_40m);
+        data_from_cpu   <= 16'h0;          
+	    mem_addr        <= 16'h0;      
+	    read_n          <=  1'b1;      	 
+	    spi_select      <=  1'h0;
+        write_n         <=  1'b1;    
+        @(posedge clk_40m);
+        data_from_cpu   <= data;          
+	    mem_addr        <= addr;      
+	    read_n          <=  1'b1;      	 
+	    spi_select      <=  1'h1;
+        write_n         <=  1'b0;    
+        @(posedge clk_40m);
+        //data_from_cpu   <= 16'h0;          
+	    //mem_addr        <= 16'h0;      
+	    read_n          <=  1'b1;      	 
+	    spi_select      <=  1'h0;
+        write_n         <=  1'b1;  
+    end  
+endtask
+
+                       
+                       
+endmodule

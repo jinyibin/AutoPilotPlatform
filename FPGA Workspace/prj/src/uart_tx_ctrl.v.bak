@@ -1,0 +1,58 @@
+
+`timescale 1 ns/10 ps
+
+module uart_tx_ctrl( 
+    input   wire        clk                 ,
+    input   wire        rst_n               ,
+    
+    input   wire        channal_sel         ,
+    input   wire [7:0]  tx_data             ,
+    input   wire        tx_data_en          ,
+   
+    
+    output  wire        uart_tx_status      ,
+    output  wire        uart_tx_over        ,
+    output  wire [7:0]  uart_tx_data        ,
+    output  reg         uart_tx_data_ready 
+    );
+
+     
+    reg     channal01_rdreq;
+    wire    channal01_full;
+    wire    channal01_empty;
+    fifo256X8 fifo256X8_01inst(
+    	.aclr   (~rst_n                                 ),
+    	.clock  (clk                                    ),
+    	.data   (tx_data                                ),
+    	.rdreq  (channal01_rdreq                        ),
+    	.wrreq  (tx_data_en&channal01_sel&~channal01_full), 
+    	.empty  (channal01_empty                        ),
+    	.full   (channal01_full                         ),
+    	.q      (uart01_tx_data                         ),
+    	.usedw  (                                       )
+    	);
+    assign channal01_sel =  (channal_no == 8'h1)?1'b1:1'b0;
+    
+    always @(posedge clk or negedge rst_n)begin
+        if(~rst_n)begin
+            channal01_rdreq <= 1'b0;    
+        end 
+        else if(~uart01_tx_status&~channal01_empty) begin
+            channal01_rdreq <= 1'b1;      
+        end
+        else begin
+            channal01_rdreq <= 1'b0;     
+        end
+    end
+    always @(posedge clk or negedge rst_n)begin
+        if(~rst_n)begin
+            uart01_tx_data_ready    <= 1'b0;    
+        end  
+        else begin
+            uart01_tx_data_ready    <= channal01_rdreq;     
+        end
+    end
+    //////*******END  
+    
+    
+endmodule

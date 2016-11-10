@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Sun Oct 30 20:37:11 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : prj
+Top-level Entity Name : Uart1To20Top
+Family : MAX 10
+Device : 10M08SCU169I7G
+Power Models : Final
+Total Thermal Power Dissipation : 125.60 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 121.00 mW
+I/O Thermal Power Dissipation : 4.60 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data
