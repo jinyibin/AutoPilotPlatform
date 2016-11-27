@@ -1,0 +1,8 @@
+[profiles]
+chip = Vybrid Update
+
+[platform]
+board = TWR
+
+[LIST]
+name = vybrid-sd-led

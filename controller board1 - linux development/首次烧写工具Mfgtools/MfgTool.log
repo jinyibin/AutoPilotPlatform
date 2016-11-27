@@ -1,0 +1,83 @@
+DLL version: 2.3.2
+Sunday, November 20, 2016 19:15:19   Start new logging
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Device Manager thread is running
+ModuleID[2] LevelID[10]: DeviceManager::DevChangeWnd::OnDeviceChange() - DEVICE_ARRIVAL_EVT(\\?\USB#VID_15A2&PID_006A#6&2c24ce2e&0&5#{a5dcbf10-6530-11d2-901f-00c04fb951ed})
+ModuleID[2] LevelID[10]: DeviceManager::DevChangeWnd::OnDeviceChange() - end
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - DEVICE_ARRIVAL_EVT(\\?\USB#VID_15A2&PID_006A#6&2c24ce2e&0&5#{a5dcbf10-6530-11d2-901f-00c04fb951ed})
+ModuleID[2] LevelID[10]: DeviceClass::FindDeviceByUsbPath--DeviceListType_Current, _devices.size: 0
+ModuleID[2] LevelID[1]: DeviceClass::FindDeviceByUsbPath() - DeviceListType_New--index: 0
+ModuleID[2] LevelID[1]: DeviceClass::FindDeviceByUsbPath() - DeviceListType_New--devPath: \\?\hid#vid_15a2&pid_006a#7&26bf05b5&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+ModuleID[2] LevelID[10]: new MxHidDevice[01529F88]
+ModuleID[2] LevelID[10]: DeviceClass::FindDeviceByUsbPath--DeviceListType_New, devInstPathToFind: USB\VID_15A2&PID_006A\6&2C24CE2E&0&5, _deviceInstanceID: USB\VID_15A2&PID_006A\6&2C24CE2E&0&5
+ModuleID[2] LevelID[10]: DeviceClass::FindDeviceByUsbPath--DeviceListType_New, Find the device, Port: 5
+ModuleID[2] LevelID[10]: DeviceClass::AddUsbDevice() successful USB#VID_15A2&PID_006A#6&2C24CE2E&0&5#{A5DCBF10-6530-11D2-901F-00C04FB951ED} add to current list, retrycount: 0
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - DEVICE_ARRIVAL_EVT,[MxHidDeviceClass] vid_15a2&pid_006a, Hub:5-Port:5
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - DEVICE_ARRIVAL_EVT, Notify
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, Volume Arrive/Remove or Device Arrive/Remove
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, m_p_usb_port is not NULL, so only refresh
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, Volume/Device Arrive
+ModuleID[2] LevelID[1]: CmdOpreation[0]--set m_hDeviceArriveEvent.
+ModuleID[2] LevelID[10]: CmdOpreation[0]--WaitforEvents device arrive1
+ModuleID[2] LevelID[10]: CmdOperation[0] device chagned and reset to state 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is G:\Project\AutoPilot\Doc\ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[01529F88] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: CmdOperation[0], current state command has been finished and the last command is successful, so SetEvent(hDevCanDeleteEvent)
+ModuleID[2] LevelID[10]: DeviceManager::DevChangeWnd::OnDeviceChange() - DEVICE_REMOVAL_EVT(\\?\USB#VID_15A2&PID_006A#6&2c24ce2e&0&5#{a5dcbf10-6530-11d2-901f-00c04fb951ed})
+ModuleID[2] LevelID[10]: DeviceManager::DevChangeWnd::OnDeviceChange() - end
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - DEVICE_REMOVAL_EVT(\\?\USB#VID_15A2&PID_006A#6&2c24ce2e&0&5#{a5dcbf10-6530-11d2-901f-00c04fb951ed})
+ModuleID[2] LevelID[10]: DeviceClass::FindDeviceByUsbPath--DeviceListType_Current, _devices.size: 1
+ModuleID[2] LevelID[10]: DeviceClass::FindDeviceByUsbPath--DeviceListType_Current, devInstPathToFind: USB\VID_15A2&PID_006A\6&2C24CE2E&0&5, _deviceInstanceID: USB\VID_15A2&PID_006A\6&2C24CE2E&0&5
+ModuleID[2] LevelID[10]: DeviceClass::FindDeviceByUsbPath--DeviceListType_Current, Find the device
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - DEVICE_REMOVAL_EVT,[MxHidDeviceClass] vid_15a2&pid_006a, Hub:5-Port:5
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - DEVICE_REMOVAL_EVT, Notify
+ModuleID[2] LevelID[10]: DeviceManager::DevChangeWnd::OnDeviceChange() - DEVICE_ARRIVAL_EVT(\\?\USB#VID_066F&PID_37FF#6&2c24ce2e&0&5#{a5dcbf10-6530-11d2-901f-00c04fb951ed})
+ModuleID[2] LevelID[10]: DeviceManager::DevChangeWnd::OnDeviceChange() - end
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, Volume Arrive/Remove or Device Arrive/Remove
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, m_p_usb_port is not NULL, so only refresh
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, Volume/Device Remove
+ModuleID[2] LevelID[1]: CmdOpreation[0]--set m_hDeviceRemoveEvent.
+ModuleID[2] LevelID[10]: CmdOpreation[0]--WaitforEvents device remove1
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent()-DEVICE_REMOVAL_EVT, hDevCanDeleteEvent has been set
+ModuleID[2] LevelID[10]: delete MxHidDevice[01529F88]
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - DEVICE_ARRIVAL_EVT(\\?\USB#VID_066F&PID_37FF#6&2c24ce2e&0&5#{a5dcbf10-6530-11d2-901f-00c04fb951ed})
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - DEVICE_ARRIVAL_EVT,[Msc,DiskDeviceClass] vid_066f&pid_37ff, not handled
+ModuleID[2] LevelID[10]: DeviceManager::DevChangeWnd::OnDeviceChange() - VOLUME_ARRIVAL_EVT(K)
+ModuleID[2] LevelID[10]: DeviceManager::DevChangeWnd::OnDeviceChange() - end
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - VOLUME_ARRIVAL_EVT(K)
+ModuleID[2] LevelID[10]: VolumeDeviceClass::AddUsbDevice()  K
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 1
+ModuleID[2] LevelID[10]: Volume--StorageDisk, Disk->_driveNumber:1, Volume->_diskNumber:1
+ModuleID[2] LevelID[10]: DeviceTypeDisk--find Disk device: 01529EC8
+ModuleID[2] LevelID[10]: Device::hubIndex::getmsc, return the port index is: 5
+ModuleID[2] LevelID[10]: VolumeDeviceClass::AddUsbDevice() successful K add to current list, retrycount: 0
+ModuleID[2] LevelID[10]: Device::hubIndex::getmsc, return the port index is: 5
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - VOLUME_ARRIVAL_EVT-Disk(K), Hub:5-Port:5
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - VOLUME_ARRIVAL_EVT, Notify
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, Volume Arrive/Remove or Device Arrive/Remove
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, m_p_usb_port is not NULL, so only refresh
+ModuleID[2] LevelID[10]: CmdOpreation[0]--OnDeviceChangeNotify, Volume/Device Arrive
+ModuleID[2] LevelID[1]: CmdOpreation[0]--set m_hDeviceArriveEvent.
+ModuleID[2] LevelID[10]: CmdOpreation[0]--WaitforEvents device arrive1
+ModuleID[2] LevelID[10]: CmdOperation[0] device chagned and reset to state 1
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is nandinit addr=0x80000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is pipenand addr=0x80000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is nandinik addr=0x100000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is pipenand addr=0x100000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is nandinik addr=0x60000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is pipenand addr=0x60000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is nandinik addr=0x180000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is pipenand addr=0x180000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is nandinik addr=0x500000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is pipenand addr=0x500000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is nandinik addr=0xa00000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is pipenand addr=0xa00000
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ !
+ModuleID[2] LevelID[10]: CCmdOpreation[0] thread is Closed
+ModuleID[2] LevelID[10]: CCmdOpreation[0] thread is Closed
+ModuleID[2] LevelID[10]: DeviceManager::OnMsgDeviceEvent() - EVENT_KILL
+ModuleID[2] LevelID[10]: CMyExceptionHandler::OnMsgExceptionEvent() - KillExceptionHandlerThread
+ModuleID[2] LevelID[10]: Exception Handler thread is closed
+ModuleID[2] LevelID[1]: delete MxHidDeviceClass
+ModuleID[2] LevelID[10]: Device Manager thread is closed
