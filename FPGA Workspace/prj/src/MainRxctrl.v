@@ -839,10 +839,13 @@ module MainRxctrl(
             endcase   
         end
     end	
+	
+    wire crc_rst_n;
+    assign crc_rst_n = (state == 4'h2)?1'b0:1'b1;
     
     crc_16 crc_16(
 	    .clk        (clk        ),    
-	    .rst_n      (rst_n      ),
+	    .rst_n      (rst_n & crc_rst_n     ),
 	    .crc_en     (crc_en     ),
 	    .data_in    (data_crc  ),
 	    .crc_reg    (CRC        ),

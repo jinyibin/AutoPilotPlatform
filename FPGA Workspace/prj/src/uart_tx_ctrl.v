@@ -10,8 +10,8 @@ module uart_tx_ctrl(
     input   wire        tx_data_en          ,
    
     
-    output  wire        uart_tx_status      ,
-    output  wire        uart_tx_over        ,
+    input  wire        uart_tx_status      ,
+    input  wire        uart_tx_over        ,
     output  wire [7:0]  uart_tx_data        ,
     output  reg         uart_tx_data_ready 
     );

@@ -46,6 +46,60 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_H6 -to clk
+set_location_assignment PIN_N2 -to rst_n
+set_location_assignment PIN_B10 -to spi_clk
+set_location_assignment PIN_A10 -to spi_cs_n
+set_location_assignment PIN_A8 -to spi_miso
+set_location_assignment PIN_A11 -to spi_mosi
+set_location_assignment PIN_M13 -to uart_rx[19]
+set_location_assignment PIN_M8 -to uart_rx[18]
+set_location_assignment PIN_N8 -to uart_rx[17]
+set_location_assignment PIN_N11 -to uart_rx[16]
+set_location_assignment PIN_M9 -to uart_rx[15]
+set_location_assignment PIN_N7 -to uart_rx[14]
+set_location_assignment PIN_N5 -to uart_rx[13]
+set_location_assignment PIN_N4 -to uart_rx[12]
+set_location_assignment PIN_L4 -to uart_rx[11]
+set_location_assignment PIN_L5 -to uart_rx[10]
+set_location_assignment PIN_E12 -to uart_rx[9]
+set_location_assignment PIN_H8 -to uart_rx[8]
+set_location_assignment PIN_J12 -to uart_rx[7]
+set_location_assignment PIN_H13 -to uart_rx[6]
+set_location_assignment PIN_J10 -to uart_rx[5]
+set_location_assignment PIN_K10 -to uart_rx[4]
+set_location_assignment PIN_J9 -to uart_rx[3]
+set_location_assignment PIN_A6 -to uart_rx_from_fpga
+set_location_assignment PIN_N12 -to uart_tx[19]
+set_location_assignment PIN_J6 -to uart_tx[18]
+set_location_assignment PIN_M7 -to uart_tx[17]
+set_location_assignment PIN_J7 -to uart_tx[16]
+set_location_assignment PIN_K6 -to uart_tx[15]
+set_location_assignment PIN_N6 -to uart_tx[14]
+set_location_assignment PIN_J5 -to uart_tx[13]
+set_location_assignment PIN_K5 -to uart_tx[12]
+set_location_assignment PIN_M5 -to uart_tx[11]
+set_location_assignment PIN_M4 -to uart_tx[10]
+set_location_assignment PIN_F12 -to uart_tx[9]
+set_location_assignment PIN_G12 -to uart_tx[8]
+set_location_assignment PIN_L13 -to uart_tx[7]
+set_location_assignment PIN_H9 -to uart_tx[6]
+set_location_assignment PIN_L12 -to uart_tx[5]
+set_location_assignment PIN_K11 -to uart_tx[4]
+set_location_assignment PIN_K13 -to uart_tx[3]
+set_location_assignment PIN_A7 -to uart_tx_to_fpga
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name VERILOG_FILE src/uart_tx_ctrl.v
+set_global_assignment -name VERILOG_FILE src/uart_rx_ctrl.v
+set_global_assignment -name VERILOG_FILE src/MainTxctrl.v
+set_global_assignment -name VERILOG_FILE src/MainRxctrl.v
 set_global_assignment -name VERILOG_FILE src/Uart1To20Top.v
 set_global_assignment -name VERILOG_FILE src/uart_transceiver.v
 set_global_assignment -name VERILOG_FILE src/spi_slave_transceiver.v
@@ -53,11 +107,18 @@ set_global_assignment -name VERILOG_FILE src/spi_slave_reg.v
 set_global_assignment -name VERILOG_FILE src/spi_master_if.v
 set_global_assignment -name VERILOG_FILE src/crc_16.v
 set_global_assignment -name QIP_FILE fifo256X8.qip
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SEARCH_PATH "e:\\work\\king\\prj\\src"
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name QIP_FILE src/pll_8MIn.qip
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_global_assignment -name SEARCH_PATH "e:\\project\\autopilotplatform\\fpga workspace\\prj\\src"
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

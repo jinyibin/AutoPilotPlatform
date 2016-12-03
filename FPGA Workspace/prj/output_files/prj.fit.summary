@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Oct 30 20:36:30 2016
+Fitter Status : Successful - Sat Dec 03 16:03:14 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 Revision Name : prj
 Top-level Entity Name : Uart1To20Top
 Family : MAX 10
 Device : 10M08SCU169I7G
 Timing Models : Final
-Total logic elements : 6,875 / 8,064 ( 85 % )
-    Total combinational functions : 6,710 / 8,064 ( 83 % )
-    Dedicated logic registers : 4,262 / 8,064 ( 53 % )
-Total registers : 4262
+Total logic elements : 6,885 / 8,064 ( 85 % )
+    Total combinational functions : 6,720 / 8,064 ( 83 % )
+    Dedicated logic registers : 4,282 / 8,064 ( 53 % )
+Total registers : 4282
 Total pins : 48 / 130 ( 37 % )
 Total virtual pins : 0
 Total memory bits : 81,920 / 387,072 ( 21 % )

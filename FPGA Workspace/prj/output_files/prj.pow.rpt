@@ -1,5 +1,5 @@
 PowerPlay Power Analyzer report for prj
-Sun Oct 30 20:37:11 2016
+Sat Dec 03 16:03:37 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -53,19 +53,19 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.18        ;
+; Average used               ; 1.44        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  18.2%      ;
+;     Processor 2            ;  44.4%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; PowerPlay Power Analyzer Summary                                                          ;
 +----------------------------------------+--------------------------------------------------+
-; PowerPlay Power Analyzer Status        ; Successful - Sun Oct 30 20:37:11 2016            ;
+; PowerPlay Power Analyzer Status        ; Successful - Sat Dec 03 16:03:37 2016            ;
 ; Quartus Prime Version                  ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition  ;
 ; Revision Name                          ; prj                                              ;
 ; Top-level Entity Name                  ; Uart1To20Top                                     ;
@@ -88,10 +88,10 @@ agreement for further details.
 ; Use smart compilation                                                      ; Off                                   ; Off           ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On            ;
 ; Enable compact report table                                                ; Off                                   ; Off           ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
 ; Preset Cooling Solution                                                    ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
 ; Board thermal model                                                        ; None (CONSERVATIVE)                   ;               ;
 ; Default Power Toggle Rate                                                  ; 12.5%                                 ; 12.5%         ;
-; Default Power Input I/O Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
 ; Use vectorless estimation                                                  ; On                                    ; On            ;
 ; Use Input Files                                                            ; Off                                   ; Off           ;
 ; Filter Glitches in VCD File Reader                                         ; On                                    ; On            ;
@@ -119,6 +119,11 @@ agreement for further details.
 ; spi_cs_n                                                                                          ; No valid clock domain found ;
 ; spi_mosi                                                                                          ; No valid clock domain found ;
 ; uart_tx_to_fpga                                                                                   ; No valid clock domain found ;
+; uart_rx[16]                                                                                       ; No valid clock domain found ;
+; uart_rx[17]                                                                                       ; No valid clock domain found ;
+; uart_rx[13]                                                                                       ; No valid clock domain found ;
+; uart_rx[14]                                                                                       ; No valid clock domain found ;
+; uart_rx[15]                                                                                       ; No valid clock domain found ;
 ; uart_rx[8]                                                                                        ; No valid clock domain found ;
 ; uart_rx[5]                                                                                        ; No valid clock domain found ;
 ; uart_rx[6]                                                                                        ; No valid clock domain found ;
@@ -129,19 +134,14 @@ agreement for further details.
 ; uart_rx[2]                                                                                        ; No valid clock domain found ;
 ; uart_rx[9]                                                                                        ; No valid clock domain found ;
 ; uart_rx[7]                                                                                        ; No valid clock domain found ;
-; uart_rx[10]                                                                                       ; No valid clock domain found ;
+; uart_rx[18]                                                                                       ; No valid clock domain found ;
 ; uart_rx[11]                                                                                       ; No valid clock domain found ;
 ; uart_rx[12]                                                                                       ; No valid clock domain found ;
-; uart_rx[13]                                                                                       ; No valid clock domain found ;
-; uart_rx[14]                                                                                       ; No valid clock domain found ;
-; uart_rx[15]                                                                                       ; No valid clock domain found ;
-; uart_rx[16]                                                                                       ; No valid clock domain found ;
-; uart_rx[17]                                                                                       ; No valid clock domain found ;
-; uart_rx[18]                                                                                       ; No valid clock domain found ;
+; uart_rx[10]                                                                                       ; No valid clock domain found ;
 ; uart_rx[19]                                                                                       ; No valid clock domain found ;
+; rst_n~inputclkctrl                                                                                ; No valid clock domain found ;
 ; pll_8MIn:pll_8MIn|altpll:altpll_component|pll_8MIn_altpll:auto_generated|wire_pll1_clk[1]~clkctrl ; No valid clock domain found ;
 ; pll_8MIn:pll_8MIn|altpll:altpll_component|pll_8MIn_altpll:auto_generated|wire_pll1_clk[0]~clkctrl ; No valid clock domain found ;
-; rst_n~inputclkctrl                                                                                ; No valid clock domain found ;
 +---------------------------------------------------------------------------------------------------+-----------------------------+
 
 
@@ -661,14 +661,14 @@ agreement for further details.
 ; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
 +----------+---------------+---------------------+-----------------------+----------------------+
 ; 1A       ; 2.5V          ; 0.25 mA             ; 0.00 mA               ; 0.25 mA              ;
-; 1B       ; 2.5V          ; 0.27 mA             ; 0.00 mA               ; 0.27 mA              ;
-; 2        ; 2.5V          ; 0.26 mA             ; 0.00 mA               ; 0.26 mA              ;
-; 3        ; 2.5V          ; 0.28 mA             ; 0.00 mA               ; 0.28 mA              ;
+; 1B       ; 2.5V          ; 0.26 mA             ; 0.00 mA               ; 0.26 mA              ;
+; 2        ; 2.5V          ; 0.25 mA             ; 0.00 mA               ; 0.25 mA              ;
+; 3        ; 2.5V          ; 0.30 mA             ; 0.00 mA               ; 0.30 mA              ;
 ; 4        ; --            ; --                  ; --                    ; --                   ;
-; 5        ; 2.5V          ; 0.26 mA             ; 0.00 mA               ; 0.26 mA              ;
-; 6        ; 2.5V          ; 0.27 mA             ; 0.00 mA               ; 0.27 mA              ;
+; 5        ; 2.5V          ; 0.29 mA             ; 0.00 mA               ; 0.29 mA              ;
+; 6        ; 2.5V          ; 0.26 mA             ; 0.00 mA               ; 0.26 mA              ;
 ; 7        ; --            ; --                  ; --                    ; --                   ;
-; 8        ; 2.5V          ; 0.29 mA             ; 0.00 mA               ; 0.29 mA              ;
+; 8        ; 2.5V          ; 0.28 mA             ; 0.00 mA               ; 0.28 mA              ;
 +----------+---------------+---------------------+-----------------------+----------------------+
 
 
@@ -697,9 +697,9 @@ agreement for further details.
 ;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 3 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 3 (0.0%)      ;
 ;                                                                                        ;               ;            ;               ;               ;
 ; Vectorless estimation                                                                  ;               ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 13672 (99.8%) ; 24 (42.9%) ; 4262 (100.0%) ; 9386 (100.0%) ;
-;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 154 (1.1%)    ; 1 (1.8%)   ; 93 (2.2%)     ; 60 (0.6%)     ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 13669 (99.7%) ; 24 (42.9%) ; 4262 (100.0%) ; 9383 (99.9%)  ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 13715 (99.8%) ; 24 (42.9%) ; 4282 (100.0%) ; 9409 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 149 (1.1%)    ; 1 (1.8%)   ; 93 (2.2%)     ; 55 (0.6%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 13712 (99.7%) ; 24 (42.9%) ; 4282 (100.0%) ; 9406 (99.9%)  ;
 ;                                                                                        ;               ;            ;               ;               ;
 ; Default assignment                                                                     ;               ;            ;               ;               ;
 ;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
@@ -724,7 +724,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime PowerPlay Power Analyzer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Sun Oct 30 20:36:49 2016
+    Info: Processing started: Sat Dec 03 16:03:27 2016
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off prj -c prj
 Info (21077): Low junction temperature is -40 degrees C
 Info (21077): High junction temperature is 100 degrees C
@@ -744,9 +744,9 @@ Info (334004): Delay annotation completed successfully
 Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
 Info (215031): Total thermal power estimate for the design is 125.60 mW
 Info: Quartus Prime PowerPlay Power Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 894 megabytes
-    Info: Processing ended: Sun Oct 30 20:37:11 2016
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 860 megabytes
+    Info: Processing ended: Sat Dec 03 16:03:37 2016
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:14
 
 
